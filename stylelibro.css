@@ -1,0 +1,154 @@
+body{
+	background-color: white;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1{
+	width: 100%;
+	height: 60px;
+	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+p{
+	margin-left: 20px;
+}
+.libros{
+	margin-top: 50px;
+	width: 80%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.libro{
+	width: 180px;
+	height: 220px;
+	box-shadow: 0 0 5px 2px #191919;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: plum;
+}
+.libro button{
+	width: 100px;
+	padding: 10px;
+	color: #fff;
+	background-color: #2a2a2a;
+	border-radius: 5px;
+}
+
+
+form{
+	width: 400px;
+	height: auto;
+	margin-top: 100px;
+	margin-left: 10%;
+	border: 1px solid #a4a4a4;
+	border-radius: 10px;
+}
+form label{
+	font-size: 20px;
+}
+form input{
+	margin: 10px;
+}
+form button{
+	width: 100px;
+	padding: 10px;
+	color: #fff;
+	background-color: #2a2a2a;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carritoventas{
+	position: fixed;
+	top: 20px;
+	right:20px ;
+	width: 50px;	
+	height: 50px;
+	z-index: 2000;
+	background-color: #2a2a2a;
+	border-radius: 10px;
+	display: flex;
+	align-items:center ;
+	justify-content: center;	
+	cursor: pointer;
+}
+.cantidadlibros{
+	width: 30px;
+	height:30px ;
+	border-radius: 50%;
+	background-color: #2a2a2a;
+	color: white;
+	display: flex;
+	align-items:center ;
+	justify-content: center;
+}
+.listaventalibros{
+	position: fixed;
+	top: 80px;
+	bottom: 0;left: 0;right: 0;
+	background-color: rgba(0,0,0,0);
+	z-index: 1000;
+	visibility: hidden;
+}
+.mostrar{
+	visibility: visible;
+}
+.listalibros{
+	width: 400px;
+	position: fixed;
+	z-index: 1000;
+	top: 80px;
+	right: 80px;
+	bottom: 40px;
+	overflow-y: scroll;
+	background-color: #2a2a2a;
+}
+.libroventa{
+	width: 400px;
+	height: auto;
+	border-bottom: 1px solid #191919;
+	background-color: #a4a4a4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.libroventa:nth-child(odd){
+	background-color: white;
+}
+.listaventalibros .listalibros .libroventa p{
+	color: black;
+}
+.listaventalibros p{
+	color: #fff;
+}
+.listaventalibros button{
+	padding: 10px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: palevioletred;
+}
