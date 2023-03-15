@@ -24,6 +24,7 @@ p{
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
+	justify-content: unsafe center;
 	flex-wrap: wrap;
 	gap: 10px;
 }
@@ -67,12 +68,6 @@ form button{
 	background-color: #2a2a2a;
 	border-radius: 5px;
 }
-
-
-
-
-
-
 
 
 
@@ -151,4 +146,39 @@ form button{
 	border-radius: 10px;
 	color: #fff;
 	background-color: palevioletred;
+}
+
+
+
+
+
+
+@media(max-width: 950px){
+	.libros{
+		width: 100%;
+	}
+}
+@media(max-width: 600px){
+	.listaventalibros, .listalibros{
+		top: 0px;
+		bottom: 0px;
+	}
+	.listalibros{
+		right: 0px;
+	}
+	.listalibros, .libroventa{
+		width: 100%;
+	}
+	.libroventa{
+		margin: 10px auto 0px auto;
+	}
+	.listaventalibros button{
+		margin-top: 20px;
+	}
+}
+@media(max-width: 400px){
+	.libro{
+		width: 140px;
+		height: 190px;
+	}
 }
